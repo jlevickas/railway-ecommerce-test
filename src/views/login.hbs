@@ -1,0 +1,24 @@
+<form action="/login" method="post">
+  <input
+    type="email"
+    name="email"
+    id="email"
+    placeholder="Ingresá tu email"
+    required
+  />
+  <input
+    type="password"
+    name="password"
+    id="password"
+    placeholder="Ingresá tu contraseña"
+    required
+  />
+  <button type="submit">Ingresar</button>
+
+  {{#if error}}
+    <p>{{error}}</p>
+  {{/if}}
+
+</form>
+
+<a href="/register">Registrarse</a>
