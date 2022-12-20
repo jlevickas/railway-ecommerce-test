@@ -16,7 +16,7 @@ const args = yargs(process.argv.slice(2))
     SERVER_MODE: "m",
   }).argv;
 
-const PORT = args.PORT;
+const PORT = process.env.PORT || args.PORT;
 
 const SERVER_MODE = args.SERVER_MODE;
 
